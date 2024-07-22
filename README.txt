@@ -1,0 +1,1 @@
+short example to understand heap allocations in Rust
