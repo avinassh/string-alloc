@@ -23,8 +23,8 @@ impl FastRS {
         let alloc_start = Instant::now();
         let ptr = alloc_string(s);
         fs.0[8..16].copy_from_slice(&(ptr.as_ptr() as usize).to_ne_bytes());
-        let alloc_end = alloc_start.elapsed().as_nanos();
-        println!("[fastrs] alloc: {:?}", alloc_end);
+        let _alloc_end = alloc_start.elapsed().as_nanos();
+        // println!("[fastrs] alloc: {:?}", alloc_end);
         fs
     }
 }

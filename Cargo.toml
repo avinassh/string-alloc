@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 rand = "0.8.5"
+pprof = { version = "=0.13.0", features = ["criterion", "flamegraph", "prost", "protobuf", "protobuf-codec"] }
