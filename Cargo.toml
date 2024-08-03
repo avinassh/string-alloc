@@ -6,3 +6,12 @@ edition = "2021"
 [dependencies]
 rand = "0.8.5"
 pprof = { version = "=0.13.0", features = ["criterion", "flamegraph", "prost", "protobuf", "protobuf-codec"] }
+
+[dev-dependencies]
+criterion = "0.3"
+rand = "0.8.5"
+smol_str = "0.2.2"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
